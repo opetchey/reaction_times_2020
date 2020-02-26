@@ -88,6 +88,13 @@ It consists of two paragraphs.}
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
+Here are two sample references: \citeauthor{Feynman1963118}
+\citetext{\citeyear{Feynman1963118}; \citealp{Dirac1953888}}.
+Bibliography will appear at the end of the document.
+
+You can cross-reference sections and subsections as follows: Section
+\ref{materials-and-methods}.
+
 \hypertarget{materials-and-methods}{%
 \section{Materials and methods}\label{materials-and-methods}}
 
@@ -141,132 +148,6 @@ T-test on the filtered data: t = 3.
 
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
-
-\hypertarget{references}{%
-\section{References}\label{references}}
-
-\hypertarget{below-here-is-information-about-how-to-write-in-markdown-put-in-figures-cross-reference-etc.}{%
-\section{****Below here is information about how to write in markdown,
-put in figures, cross reference,
-etc.}\label{below-here-is-information-about-how-to-write-in-markdown-put-in-figures-cross-reference-etc.}}
-
-\hypertarget{introduction-1}{%
-\section{Introduction}\label{introduction-1}}
-
-This template is based on the generic OUP template available
-\href{https://academic.oup.com/icesjms/pages/General_Instructions}{here}.
-The original OUP sample tex document, providing more details on prefered
-formatting for LaTeX documents, is included with the template in the
-file \texttt{ouparticle\_sample.tex}.
-
-Here are two sample references: \citeauthor{Feynman1963118}
-\citetext{\citeyear{Feynman1963118}; \citealp{Dirac1953888}}.
-Bibliography will appear at the end of the document.
-
-\hypertarget{materials-and-methods-1}{%
-\section{Materials and methods}\label{materials-and-methods-1}}
-
-An equation with a label for cross-referencing:
-
-\begin{equation}\label{eq:eq1}
-\int^{r_2}_0 F(r,\varphi){\rm d}r\,{\rm d}\varphi = [\sigma r_2/(2\mu_0)]
-\int^{\infty}_0\exp(-\lambda|z_j-z_i|)\lambda^{-1}J_1 (\lambda r_2)J_0
-(\lambda r_i\,\lambda {\rm d}\lambda)
-\end{equation}
-
-This equation can be referenced as follows: Eq. \ref{eq:eq1}
-
-\hypertarget{a-subsection}{%
-\subsection{A subsection}\label{a-subsection}}
-
-A numbered list:
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi})}
-\tightlist
-\item
-  First point
-\item
-  Second point
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Subpoint
-  \end{itemize}
-\end{enumerate}
-
-A bullet list:
-
-\begin{itemize}
-\tightlist
-\item
-  First point
-\item
-  Second point
-\end{itemize}
-
-\hypertarget{results-1}{%
-\section{Results}\label{results-1}}
-
-Generate a figure.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{plot}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{10}\NormalTok{,}\DataTypeTok{main=}\StringTok{"Some data"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"Distance (cm)"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"Time (hours)"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}[p]
-\includegraphics[width=1\linewidth]{manuscript_reaction_times_2020_files/figure-latex/fig1-1} \caption{This is the first figure.}\label{fig:fig1}
-\end{figure}
-
-You can reference this figure as follows: Fig. \ref{fig:fig1}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{plot}\NormalTok{(}\DecValTok{1}\OperatorTok{:}\DecValTok{5}\NormalTok{,}\DataTypeTok{pch=}\DecValTok{19}\NormalTok{,}\DataTypeTok{main=}\StringTok{"Some data"}\NormalTok{,}\DataTypeTok{xlab=}\StringTok{"Distance (cm)"}\NormalTok{,}\DataTypeTok{ylab=}\StringTok{"Time (hours)"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{figure}[p]
-\includegraphics[width=1\linewidth]{manuscript_reaction_times_2020_files/figure-latex/fig2-1} \caption{This is the second figure.}\label{fig:fig2}
-\end{figure}
-
-Reference to second figure: Fig. \ref{fig:fig2}
-
-Generate a table.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{df =}\StringTok{ }\KeywordTok{data.frame}\NormalTok{(}\DataTypeTok{ID=}\DecValTok{1}\OperatorTok{:}\DecValTok{3}\NormalTok{,}\DataTypeTok{code=}\NormalTok{letters[}\DecValTok{1}\OperatorTok{:}\DecValTok{3}\NormalTok{])}
-\KeywordTok{print}\NormalTok{(}\KeywordTok{xtable}\NormalTok{(df,}\DataTypeTok{caption=}\StringTok{"This is the table caption"}\NormalTok{,}\DataTypeTok{label=}\StringTok{"tab:tab1"}\NormalTok{),}
-      \DataTypeTok{comment=}\OtherTok{FALSE}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{rrl}
-  \hline
- & ID & code \\ 
-  \hline
-1 &   1 & a \\ 
-  2 &   2 & b \\ 
-  3 &   3 & c \\ 
-   \hline
-\end{tabular}
-\caption{This is the table caption} 
-\label{tab:tab1}
-\end{table}
-
-You can reference this table as follows: Table \ref{tab:tab1}.
-
-\hypertarget{discussion-1}{%
-\section{Discussion}\label{discussion-1}}
-
-You can cross-reference sections and subsections as follows: Section
-\ref{materials-and-methods} and Section \ref{a-subsection}.
 
 \textbf{\emph{Note:}} the last section in the document will be used as
 the section title for the bibliography.
